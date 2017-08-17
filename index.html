@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" type="img/x-icon" href="img/icon.ico">
+    <script src="js/app.js"></script>     
+</head>
+<body>
+    <h2>Formulario</h2>
+    <center>
+    <form  >
+    <!--method="get" onSubmit="return validar();"-->
+        <input type="text" id="nombre" name="" value=""  placeholder="Ingrese su Nombre" > <br>
+        <input type="text" id="apellido" name="" value="" placeholder="Ingrese sus Apellidos"> <br>
+        <div>
+            Fecha de Nacimiento:
+        <input type="date" id="fecha" name="fecha" min="1900-12-01" max="1999-12-31"  >
+        </div>
+        <br> 
+        <input type="number" id="dni" name=""  placeholder="Numero de Identidad"><br>
+        <input type="number" id="celular" name=""  placeholder="Numero de celular"><br>
+        <input type="password" id="contraceña"   placeholder="Ingrese su contraseña" ><br>
+        <input type="password" id="confir-contraceña"  placeholder="Confirme su contraseña" > <br>
+        <input type="text" class="comentarios" id="comentarios" placeholder="Comentarios (Opcional)"> 
+        </div>
+        <div class="checkbox">
+        <label> 
+              <input type="checkbox" value="remember-me">
+              <span class="suscripcion">Terminos y Condiciones</span>
+        </label>
+          </div>
+          <div id="salida"></div>
+            <div class="preloader10">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+           
+           <input type="submit" name="" value="Registar" onclick="verificar()">
+          <button class="Registrar" onclick="verificar()">Registrar</button>
+          <!--type="submit"-->
+          <div id="registrar"></div>
+          <script src="js/app.js"></script>
+    </form>
+    </center>
+
+</body>
+</html>
