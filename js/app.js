@@ -52,7 +52,7 @@ function verificarNombre() {
  function verificarCelular() {
      var celular = document.getElementById("celular").value; //papá
       var yescelular = document.getElementById("yescelular");
-      if (celular.length > 0 && celular.match(/^\d.{,6}$/)) {
+      if (celular.length > 0 && celular.match(/^\d.{6,}$/)) {
           yescelular.innerHTML="<div style='color:green' ><strong>Numero Correcto</strong></div>";
       }else{
           yescelular.innerHTML="<div style = 'color:red' ><strong>Numero Incorrecto</strong></div>";
@@ -60,23 +60,25 @@ function verificarNombre() {
  }
  function verificarContraseña() {
      var contraseña = document.getElementById("contraseña").value; //papá
-     var confir_contraseña = document.getElementById("confir-contraseña").value; //papá
+     // var confir_contraseña = document.getElementById("confir-contraseña").value; //papá
+    var ExpreRegu = new RegExp(/.{6,}/);
       var yescontraseña = document.getElementById("yescontraseña");
-      if (contraseña.length > 0  && contraseña.match(/^(?=.*\d).{6,}$/ )) {
+      if (contraseña.length >= 6 ) {
+        // || ExpreRegu.test(contraseña)
           yescontraseña.innerHTML="<div style='color:green' ><strong>Contraseña Correcta</strong></div>";
       }else{
           yescontraseña.innerHTML="<div style = 'color:red' ><strong>Contraseña Incorrecta</strong></div>";
       }
-      console.log(contraseña)
+      // console.log(contraseña)
  }
- function verificarContraseña2() {
+ function ConfirmarContraseña(){
      var contraseña = document.getElementById("contraseña").value; //papá
-     var confir_contraseña = document.getElementById("confir-contraseña").value; //papá
-      var yes2contraseña = document.getElementById("yes2contraseña");
-      if (confir_contraseña.length > 0 && contraseña === confir_contraseña && contraseña.match(/^(?=.*\d).{6,}$/ )) {
-          yes2contraseña.innerHTML="<div style='color:green' ><strong>Contraseña Correcta</strong></div>";
+     var confir_contraseña = document.getElementById("confirContraseña").value; //papá
+      var yesconfir_contraseña = document.getElementById("yesconfirContraceña");
+      if (  contraseña==confir_contraseña && confir_contraseña.length>=5) {
+        // confir_contraseña.length>0 &&
+          yesconfir_contraseña.innerHTML="<div style='color:green' ><strong>Contraseña Correcta</strong></div>";
       }else{
-          yes2contraseña.innerHTML="<div style = 'color:red' ><strong>Contraseña Incorrecta</strong></div>";
+          yesconfir_contraseña.innerHTML="<div style = 'color:red' ><strong>Contraseña Incorrecta</strong></div>";
       }
-      console.log(confir_contraseña)
- }
+}

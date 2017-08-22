@@ -24,20 +24,20 @@
         </div>
         <br> 
 
-        <input type="Email" id="email"  onkeydown="verificarEmail()" placeholder="Direccion de Correo"><br>
+        <input type="Email" id="email"  placeholder="Direccion de Correo"><br>
         <div id="yesEmail" ></div>
 
-        <input type="number" id="dni"  onkeydown="verificarDni()" placeholder="Numero de Identidad"><br>
+        <input type="text" id="dni"  onkeydown="verificarDni()" placeholder="Numero de Identidad"><br>
         <div id="yesdni" ></div>
         
-        <input type="number" id="celular"  onkeydown="verificarCelular()" placeholder="Numero de celular"><br>
+        <input type="text" id="celular"  onkeydown="verificarCelular()" placeholder="Numero de celular"><br>
         <div id="yescelular" ></div>
         
-        <input type="text" id="contraseña"  onkeydown="verificarContraseña()" placeholder="Ingrese contraseña min 8 digitos" ><br>
+        <input type="password" id="contraseña"  onkeydown="verificarContraseña()" placeholder="Ingrese contraseña min 8 digitos" ><br>
         <div id="yescontraseña" ></div>
         
-        <input type="text" id="confir-contraseña" onkeydown="verificarContraseña()" placeholder="Confirme su contraseña" > <br>
-        <div id="yes2contraceña" ></div>
+        <input type="password" id="confirContraseña" onkeyup="ConfirmarContraseña()" placeholder="Confirme su contraseña" > <br>
+        <div id="yesconfirContraceña" ></div>
         
         <input type="text" class="comentarios" id="comentarios" placeholder="Comentarios (Opcional)"> 
         </div>

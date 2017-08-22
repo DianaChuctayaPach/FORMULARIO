@@ -4,7 +4,7 @@
 }
 body{
     align-content: center;
-    /*background-image: url(../img/fondo.jpg)*/
+    background-image: url(../img/fondo.jpg)
 }
 h2{
     color: red;
@@ -45,9 +45,7 @@ input{
     font-size: 20px;
     align-content: center;
 }
-.yesapellido{
-    color: green;
-}
+
 .preloader10 {
    width:40px;
    height:20px;
